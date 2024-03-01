@@ -1,0 +1,246 @@
+html{
+    font-size: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+a:hover{
+   opacity: 0.5;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    max-width: 1200px;
+    height:130px ;
+    margin: 0 auto;
+}
+header .flex{
+    margin: 50px 0 40px 0;
+}
+header .flex .logo img{
+    width: 350px;
+}
+header .header-btn{
+    background-color: #66CC66;
+    color: #fff;
+    border-radius: 10px; 
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    padding: 6px;
+}
+header .header-btn a{
+    height: 100%;
+    border: 1px solid #fff;
+    color:#fff;
+    border-radius:6px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+header ol{
+    display: flex;
+}
+header ol li{
+  font-size: 15px;
+  margin-right: 7px;
+}
+header ol li:nth-child(1){
+    color: #0000FF;
+}
+.mainvisual img{
+    width:100% ;
+    object-fit: cover;
+    height: 450px;
+    margin-bottom: 100px;
+}
+.container .title{
+    font-size:30px ;
+    margin-bottom:30px ;
+}
+.container .staffs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.container .staffs .item{
+    width: 28%;
+    padding-top: 40px;
+}
+.container .staffs .item div{
+    position: relative;
+}
+.container .staffs .item .new-img{
+    position: absolute;
+    top: -25px;
+    left: -20px;
+}
+.container .staffs .item .img{
+    text-align: center;
+    display: block;
+}
+.container .staffs .item .img img{
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    border: 10px solid #EEEEEE;
+}
+.container .staffs .item .img img:hover{
+  opacity: 0.6;
+}
+.container .staffs .item .item-title{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 50px;
+    display: block;
+}
+.container .staffs .item .time{
+    font-size: 0.8rem;
+    padding: 10px 0;
+}
+.container .staffs .item .interview{
+    font-size: 1rem;
+    padding: 12px 0;
+}
+.container .staffs .item .beforeafter{
+    position: relative;
+}
+.container .staffs .item .beforeafter::before{
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom:5px;
+    right:-50px ;
+}
+.container .staffs .item .beforeafter::after{
+   content: "";
+    position: absolute;
+    top: 57%;
+    right: -53px;
+    background-color: #000;
+    width: 15px;
+    height: 1px;
+    transform: rotate(40deg);
+}
+.container .list{
+    padding-top: 60px;
+    text-align: center;
+}
+.container .list .listbtn{
+    background-color: #66CC66	;
+    color:#fff ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 300px;
+   height: 50px;
+   font-weight: bold;
+   border-radius: 10px;
+   position: relative;
+   padding-right: 50px;
+   margin: 0 auto;
+}
+.container .list .listbtn::after{
+    content: "";
+    position: absolute;
+    top: 53%;
+    right: 48px;
+    background-color: #fff;
+    width: 15px;
+    height: 1px;
+    transform: rotate(40deg);
+}
+.container .list .listbtn::before{
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 33px;
+    right:50px ;
+}
+.container .banner-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px 0;
+}
+.container .banner-list .banner-item{
+    width: 22%;
+   height:70px ;
+   margin-right: 4%;
+  margin-bottom: 25px;
+}
+.container .banner-list .banner-item img{
+    width: 100%;
+    height: 100%;
+}
+.container .banner-list .banner-item:nth-child(4n){
+    margin-right: 0;
+}
+footer{
+    background-color: #EEEEEE;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+footer .flex{
+    max-width: 1200px;
+   margin: 0 auto ;
+}
+footer .flex .text{
+    padding: 30px;
+}
+footer .flex .text p{
+    text-align: left;
+}
+footer .flex .text .company{
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 10px ;
+}
+footer .flex .links{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    width: 300px;
+}
+footer .flex .links li{
+   text-align: center;
+   margin-bottom: 20px;
+   width:120px ;
+   height: 50px;
+   line-height: 50px;
+   border: 1px solid #BBBBBB;
+   background-color: #fff;
+}
+footer .flex .links li a{
+    display: inline-block;
+    
+}
+@media screen and(max-width:640px;){
+    footer .flex{
+        flex-direction: column-reverse;
+    }
+}

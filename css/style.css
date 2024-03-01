@@ -241,3 +241,46 @@ aside .season ul li a:hover{
     opacity: 0.7;
     text-decoration: underline;
 }
+@media (max-width:414px) {
+   
+}
+@media (max-width:834px) {
+    #header{
+        font-size: 1rem;
+    }
+    .intro p{
+        font-size: 1rem;
+    }
+    .mainvisual .site-logo{
+        height: 200px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    main,aside{
+        width: 85%;
+        margin: 0 auto;
+    }
+    main #item .section-title{
+        font-size: 1rem;
+    }
+    main #item .youtube{
+      width: 85%;
+      margin: 0 7.5%;
+      padding: 30px 0;
+    }
+    #footer .footer-title{
+        font-size:1.2rem ;
+    }
+    #footer .writer,#footer .relating-site{
+        padding: 0 20px;
+    }
+    #footer .writer .writer-detail p,#footer .relating-site .site-detail-item a p{
+        display: none;
+    }
+}
+@media (max-width:1084px) {
+    #header .site-title{
+        width: 60%;
+    }
+}
