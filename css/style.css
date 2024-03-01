@@ -275,8 +275,23 @@ aside .season ul li a:hover{
     #footer .writer,#footer .relating-site{
         padding: 0 20px;
     }
+    #footer .writer .writer-detail  a{
+        margin: 0 auto;
+    }
+    #footer .writer .writer-detail img{
+        padding: 0;
+        float: none;
+    }
     #footer .writer .writer-detail p,#footer .relating-site .site-detail-item a p{
         display: none;
+    }
+    #footer .relating-site .site-detail{
+        flex-wrap: wrap;
+    }
+    #footer .relating-site .site-detail .site-detail-item{
+        width: 46%;
+       
+    
     }
 }
 @media (max-width:1084px) {
