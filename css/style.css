@@ -33,7 +33,7 @@ li{
     line-height: 100px;
    text-align: center;
    max-width: 650px;
-   width: 100%;
+
    font-family: 'Noto Serif JP', serif;
 }
 #header .header-image{
@@ -248,7 +248,9 @@ aside .season ul li a:hover{
     }
     #header .site-title{
         margin: 0 auto;
+      
     }
+    
     #header .header-image{
         display: none;
     }
@@ -303,10 +305,5 @@ aside .season ul li a:hover{
     #footer .relating-site .site-detail .site-detail-item img{
        height: 100px;
 
-    }
-}
-@media (max-width:1084px) {
-    #header .site-title{
-        width: 60%;
     }
 }
