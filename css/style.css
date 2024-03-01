@@ -241,14 +241,18 @@ aside .season ul li a:hover{
     opacity: 0.7;
     text-decoration: underline;
 }
-@media (max-width:414px) {
-   
-}
+
 @media (max-width:834px) {
     #header{
         font-size: 1rem;
-        flex-direction: column;
     }
+    #header .site-title{
+        margin: 0 auto;
+    }
+    #header .header-image{
+        display: none;
+    }
+    
     .intro p{
         font-size: 1rem;
     }
