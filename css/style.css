@@ -63,6 +63,13 @@ li{
     margin-bottom: 50px;
     height: calc(100vh);
 }
+.mainvisual .width{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    font-size: 1rem;
+    color:var(--black);
+}
 .mainvisual .site-image{
     height:calc(100vh - 100px);
     width: 100%;
@@ -71,6 +78,9 @@ li{
 }
 .mainvisual .site-image img{
     object-fit: cover;
+}
+.mainvisual .site-image img:nth-child(2){
+    object-position: center;
 }
 .mainvisual .site-logo{
     position: absolute;
@@ -98,7 +108,11 @@ li{
      animation: anime 12s infinite;
      color:var(--black);
      font-weight:600 ;
-    
+     transition: all 0.3s ease-in-out;
+ }
+ .intro .btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 15px  var(--yellow);
  }
  @keyframes anime{
     0% {background-color:#ffff66;}

@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/scrolldown.css">
+    <link rel="stylesheet" href="css/wave.css">
+    <!-- 文字変更のための読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+<!-- tippy（画像吹き出し）のためのサイト読み込み -->
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@5.0.3/animations/scale.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@5.0.3/themes/light-border.css">
 </head>
 <body>
     <header id="header">
@@ -21,22 +28,31 @@
                 <li><img src="https://img.fril.jp/img/482048052/l/1412276010.jpg?1656601197" alt="1985優勝"></li>
                 <li><img src="https://img.mandarake.co.jp/webshopimg/03/00/197/0300626197/03006261970.jpg" alt="2003優勝"></li>
                 <li><img src="https://blogimg.goo.ne.jp/user_image/49/dc/cb22a151ff541fe9287e39e05b9d5df7.jpg" alt="2005優勝"></li>
-                <li><a href="https://m.hanshintigers.jp/game/schedule/2023/11l.html">
-                    <img src="https://m.hanshintigers.jp/files/news/np_12969_sp_thumb.gif" alt="2023優勝">
+                <li><a  href="https://m.hanshintigers.jp/game/schedule/2023/11l.html">
+                    <img src="https://m.hanshintigers.jp/files/news/np_12969_sp_thumb.gif" alt="2023優勝"><span></span>
                 </a>
             </li>
             </ul>
         </nav>
     </header>
        <section class="mainvisual">
-        <img class="site-image" src="https://pbs.twimg.com/media/F-LWVrUbIAAI2N9.jpg:large" alt="">
+        <!-- resize -->
+        <p class="width">横幅：<span></span></p>
+        <!-- resize終了 -->
+        <!-- slider.. -->
+        <ul class="slider">
+            <li class="site-image site-image1"></li> 
+        <li class="site-image site-image2"></li>
+        </ul>
+        <div class="scrolldown1"><span>Scroll</span></div>
         <a href="https://hanshintigers.jp/"><img class="site-logo" src="https://image.pia.jp/images/201511/201511060064_ex.png" alt="ロゴ画像"></a>
        </section>   
     <section class="intro"> 
     <p>このサイトは阪神ファンの管理人が独断と偏見で伝説の試合や印象に残る試合、サヨナラ勝利
         などをまとめたものです。<br> 楽しんでご覧ください！
     </p>
-<a href="https://baseball.yahoo.co.jp/npb/schedule/" class="btn">阪神2024シーズン日程はこちらから</a>
+<a href="https://hanshintigers.jp/game/schedule/2024/03l.html" class="btn btnripple2">阪神2024シーズン日程はこちらから</a>
+<!-- サイトとばないんだが！？ -->
     </section>
   <div class="content">
     <main>
@@ -82,7 +98,7 @@
         <section class="writer">
             <h2 class="footer-title">サイト制作者</h2>
             <div class="writer-detail">
-                <a href="https://www.youtube.com/@user-sm8bl3ks3z/videos"><img src="https://yt3.ggpht.com/z1egTKj3cxq-oSeAKlrStkhCD58NADfs9P29-m9RM1uYHy7MwehzbcuFyBniDLD6WyIZ4_od=s108-c-k-c0x00ffffff-no-rj" alt=""></a>
+                <a href="https://www.youtube.com/@user-sm8bl3ks3z/videos"><img class="cap"  data-tippy-content="<p>日本一の瞬間号泣しました！笑</p>" src="https://yt3.ggpht.com/z1egTKj3cxq-oSeAKlrStkhCD58NADfs9P29-m9RM1uYHy7MwehzbcuFyBniDLD6WyIZ4_od=s108-c-k-c0x00ffffff-no-rj" alt=""></a>
                 <p >阪神が大好きなただの大学生。去年は忙しくてあまり現地入りできなかったので今年はたくさん
                     現地で試合を見たいと思っている。
                 </p>
@@ -118,6 +134,12 @@
     </footer>
     <p id="page-top"><a href="#">Topへはこちら</a></p>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@5"></script>
+<!-- tippy(画像の吹き出し)のためのjavascript -->
     <script src="js/scroll.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/tippy.js"></script>
+    <script src="js/resize.js"></script>
 </body>
 </html>
