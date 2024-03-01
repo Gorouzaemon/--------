@@ -247,6 +247,7 @@ aside .season ul li a:hover{
 @media (max-width:834px) {
     #header{
         font-size: 1rem;
+        flex-direction: column;
     }
     .intro p{
         font-size: 1rem;
@@ -269,6 +270,7 @@ aside .season ul li a:hover{
       margin: 0 7.5%;
       padding: 30px 0;
     }
+
     #footer .footer-title{
         font-size:1.2rem ;
     }
@@ -277,10 +279,13 @@ aside .season ul li a:hover{
     }
     #footer .writer .writer-detail  a{
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
     #footer .writer .writer-detail img{
         padding: 0;
         float: none;
+        
     }
     #footer .writer .writer-detail p,#footer .relating-site .site-detail-item a p{
         display: none;
@@ -290,8 +295,10 @@ aside .season ul li a:hover{
     }
     #footer .relating-site .site-detail .site-detail-item{
         width: 46%;
-       
-    
+    }
+    #footer .relating-site .site-detail .site-detail-item img{
+       height: 100px;
+
     }
 }
 @media (max-width:1084px) {
