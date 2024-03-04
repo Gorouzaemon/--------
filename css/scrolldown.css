@@ -12,11 +12,13 @@
     /*描画位置*/
 	position: absolute;
 	left:-20px;
-	top: -20px;
+	top: -140px;
     /*テキストの形状*/
-	color: #eee;
+	color: #7B3CFF		;
 	font-size: 0.9rem;
 	letter-spacing: 0.05em;
+	z-index: 998;
+	font-weight: bold;
 }
 
 /* 線の描写 */
@@ -24,14 +26,16 @@
 	content: "";
     /*描画位置*/
 	position: absolute;
-	top: 0;
+	top: -13000px;
     /*線の形状*/
 	width: 2px;
 	height: 30px;
-	background: #eee;
+	background: #7B3CFF;
     /*線の動き1.4秒かけて動く。永遠にループ*/
 	animation: pathmove 1.4s ease-in-out infinite;
 	opacity:0;
+	z-index: 998;
+
 }
 
 /*高さ・位置・透過が変化して線が上から下に動く*/
