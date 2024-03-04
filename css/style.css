@@ -152,6 +152,25 @@ main #item .player:hover{
 main #item .player:active{
     opacity: 0.7;
 }
+main #item #meisi-n dl{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+main #item #meisi-n dl dt{
+    width: 15%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+main #item #meisi-n dl  dd{
+    width: 85%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+main #item #meisi-n dl dt:last-child,
+main #item #meisi-n dl dd:last-child{
+  border-bottom: none;
+}
 .section-title{
     background-color: var(--black);
     color: var(--yellow);
@@ -162,7 +181,7 @@ main #item .player:active{
     font-family: 'Noto Serif JP', serif;
 }
 aside{
-    width: 22%;
+    width: 25%;
 }
 aside .section-title{
     clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
@@ -178,14 +197,13 @@ aside .season{
 }
 aside .season .season-title{
     font-size: 1.3rem;
-    padding: 10px;
+    padding: 20px;
 }
 aside .season ul{
     padding: 15px;
 }
 aside .season ul li{
     display: flex;
-    border-bottom: 1px dashed var(--black);
     line-height: 2;
     font-size: 1.3rem;
 }
@@ -202,6 +220,11 @@ aside .season ul li a:hover{
     color: var(--yellow);
     text-decoration: underline;
 }
+aside .season ul li a:hover:nth-child(3){
+    color: #000;
+    text-decoration: none;
+}
+
 #footer{
   background-color: var(--black);
   height: 300px;
