@@ -53,26 +53,25 @@
 	}
 }
 
-main #item #meisi-n dl{
+main #item-2023 #meisi-n dl{
     display: flex;
-    
     flex-wrap: wrap;
 }
-main #item #meisi-n dl dt{
+main #item-2023 #meisi-n dl dt{
     width: 15%;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
-main #item #meisi-n dl  dd{
+main #item-2023 #meisi-n dl  dd{
     width: 85%;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
-main #item #meisi-n dl dt:last-of-type,
-main #item #meisi-n dl dd:last-child{
+main #item-2023 #meisi-n dl dt:last-of-type,
+main #item-2023 #meisi-n dl dd:last-child{
   border-bottom: none;
 }
-main #item .area ul li a:hover,main #item #meisi-n dl dd a:hover{
+main #item-2023 .area ul li a:hover,main #item-2023 #meisi-n dl dd a:hover{
 	 text-decoration: underline;
 	 color: var(--yellow);
 }
