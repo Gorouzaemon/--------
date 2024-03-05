@@ -1,7 +1,11 @@
 /*tabの形状*/
+.item-2023{
+	padding: 10px;
+}
 .tab{
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 30px;
 }
 .tab li a{
 	display: block;
@@ -29,6 +33,9 @@
     border-top: 1px solid #ccc;
     font-size: 1rem;
 }
+.area ul li:first-child{
+	border-top: none;
+}
 /*areaにis-activeというクラスがついた時の形状*/
 .area.is-active {
     display: block;/*表示*/
@@ -44,4 +51,28 @@
 	to {
 		opacity: 1;
 	}
+}
+
+main #item #meisi-n dl{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+main #item #meisi-n dl dt{
+    width: 15%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+main #item #meisi-n dl  dd{
+    width: 85%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+main #item #meisi-n dl dt:last-of-type,
+main #item #meisi-n dl dd:last-child{
+  border-bottom: none;
+}
+main #item .area ul li a:hover,main #item #meisi-n dl dd a:hover{
+	 text-decoration: underline;
+	 color: var(--yellow);
 }

@@ -152,25 +152,6 @@ main #item .player:hover{
 main #item .player:active{
     opacity: 0.7;
 }
-main #item #meisi-n dl{
-    display: flex;
-    
-    flex-wrap: wrap;
-}
-main #item #meisi-n dl dt{
-    width: 15%;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-main #item #meisi-n dl  dd{
-    width: 85%;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-main #item #meisi-n dl dt:last-child,
-main #item #meisi-n dl dd:last-child{
-  border-bottom: none;
-}
 .section-title{
     background-color: var(--black);
     color: var(--yellow);
