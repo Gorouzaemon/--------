@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/wave.css">
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/fadein.css">
     <!-- 文字変更のための読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +25,8 @@
 <!-- tippy（画像吹き出し）のためのサイト読み込み -->
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@5.0.3/animations/scale.css">
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@5.0.3/themes/light-border.css">
+<!-- inview(表示領域でのアニメーション)のためのcssライブラリの読み込み -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" />
 </head>
 <body>
     <div id="splash">
@@ -56,6 +59,8 @@
         <ul class="slider">
             <li class="site-image site-image1"></li> 
         <li class="site-image site-image2"></li>
+        <li class="site-image site-image3"></li>
+        <li class="site-image site-image4"></li>
         </ul>
         <div class="scrolldown1"><span>Scroll</span></div>
         <a href="https://hanshintigers.jp/"><img class="site-logo" src="https://image.pia.jp/images/201511/201511060064_ex.png" alt="ロゴ画像"></a>
@@ -69,21 +74,21 @@
     </section>
   <div class="content">
     <main>
-        <section id="item">
+        <section id="item" class="js-fade">
             <h2 class="section-title">9回表一挙11得点！ (2003/5/31)</h2>
             <iframe class="youtube" width="560" height="335" src="https://www.youtube.com/embed/O7a74AG-rug?si=NoTlXLUozluz4etD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>この日の阪神は8回までランナーを出すも、得点にあまり結びつかなかった。だが2対4の9回表、ノーアウト満塁で<span class="player"><a href="http://tomoaki-kanemoto.com/">金本</a></span>が2点タイムリーツーベースヒットを放ち土壇場で追いつき、その後猛虎打線が
                 火を噴く。
             </p>
         </section>
-        <section id="item">
+        <section id="item" class="js-fade">
             <h2 class="section-title">9回表2アウトから3点差大逆転！ (2008/7/6)</h2>
             <iframe class="youtube" width="560" height="335" src="https://www.youtube.com/embed/MTaYJi22R9w?si=oa0ozfpd2YjZ2aNJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>9回表2アウト時点で4対7であったため、かなり絶望的な状態だったが<span class="players">関本,新井</span>の連続タイムリーによって何とかつなぎ、最後には<span class="player"><a href="http://tomoaki-kanemoto.com/">金本</a></span>が
                 逆転のツーランホームランをレフトスタンドまで運んでいくことで大逆転を果たした。これには実況もかなり度肝を抜かれていた。
             </p>
         </section>
-        <section id="item">
+        <section id="item" class="js-fade">
             <h2 class="section-title">史上初!csで6点差大逆転!(2019/10/5)</h2>
             <iframe class="youtube" width="560" height="335" src="https://www.youtube.com/embed/YN5EPJBpix0?si=vr-Q_4_o-yzIiv-m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>横浜スタジアムで行われたファーストステージ第一戦は、5回表の時点で1対7と勝負がついたかのように思えたが、
@@ -91,7 +96,7 @@
                 その後8回表エスコバーから梅野がヒット、そして木浪のタイムリーでまた1点を返すと、最後また北條が2点タイムリー3ベースヒットを放ち逆転に成功した。
             </p>
         </section>
-        <section id="item-2023">
+        <section id="item-2023" class="js-fade">
             <h2 class="section-title">2023年のタイガース
             </h2>
             <ul class="tab">
@@ -132,7 +137,7 @@
             </div>
         </section>
     </main>
-    <aside>
+    <aside class="js-fade">
         <section class="season">
              <h2 class="section-title">2024年現地予約はこちらから</h2>
              <ul>
@@ -144,7 +149,7 @@
 
     </aside>
   </div> 
-  <footer id="footer">
+  <footer id="footer" class="js-fade">
         <section class="writer">
             <h2 class="footer-title">サイト制作者</h2>
             <div class="writer-detail">
@@ -195,5 +200,8 @@
     <script src="js/resize.js"></script>
     <script src="js/loading.js"></script>
     <script src="js/tab.js"></script>
+    <script src="js/fadein.js"></script>
+    <!-- inviewのためのjs -->
+<script type="text/javascript" src="js/jquery.inview.js"></script>
 </body>
 </html>

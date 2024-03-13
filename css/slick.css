@@ -14,7 +14,12 @@
 .site-image2 {
     background-image:url("https://cloudfront-ap-northeast-1.images.arcpublishing.com/sankei/M3Y5UVVD75IYRKD4KPVJY3UCZQ.jpg");
 }
-
+.site-image3{
+    background-image: url("https://www.sponichi.co.jp/baseball/news/2021/09/04/jpeg/20210904s00001173576000p_view.webp");
+}
+.site-image4{
+    background-image: url("https://cdn.mainichi.jp/vol1/2023/11/05/20231105s00001173610000p/9.jpg?1");
+}
 .site-image {
     width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
     height: calc(100vh + 100px);
