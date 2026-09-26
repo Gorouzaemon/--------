@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/tab.css">
     <link rel="stylesheet" href="css/fadein.css">
+    <link rel="stylesheet" href="css/standings.css">
     <!-- 文字変更のための読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +68,7 @@
     <p>このサイトは阪神ファンの管理人が独断と偏見で伝説の試合や印象に残る試合、サヨナラ勝利
         などをまとめたものです。<br> 楽しんでご覧ください！
     </p>
-<a href="https://hanshintigers.jp/game/schedule/2024/03l.html" class="btn btnripple2">阪神2024シーズン日程はこちらから</a>
+<a href="https://hanshintigers.jp/game/schedule/2026/" class="btn btnripple2">阪神2026シーズン日程はこちらから</a>
 <!-- サイトとばないんだが！？ -->
     </section>
   <div class="content">
@@ -94,55 +95,36 @@
                 その後8回表エスコバーから梅野がヒット、そして木浪のタイムリーでまた1点を返すと、最後また北條が2点タイムリー3ベースヒットを放ち逆転に成功した。
             </p>
         </section>
-        <section id="item-2023" class="js-fade">
-            <h2 class="section-title">2023年のタイガース
-            </h2>
-            <ul class="tab">
-                <li><a href="#sayonara">サヨナラ勝利</a></li>
-                <li><a href="#meisi-n">名シーン集</a></li>
-                <li><a href="#mietyan">ミエちゃんシーン集</a></li>
-             </ul>
-            <div id="sayonara" class="area">
-                <ul>
-                <li><a href="">3月29日</a></li>
-                <li><a href="">4月1日</a></li>
-                <li><a href="">5月20日</a></li>
-                <li><a href="">10月19日</a></li>
-                <li><a href="">11月1日</a></li>
-                </ul>
-            </div>
-            <div id="meisi-n" class="area">
-                <dl>
-                    <dt><a href="">4/27</a></dt>
-                    <dd><a href="">巨人相手に15-0で完封勝利</a></dd>
-                    <dt><a href="">7/12</a></dt>
-                    <dd><a href="">森下で始まり、森下でサヨナラ。森下劇場</a></dd>
-                    <dt><a href="">9/14</a></dt>
-                    <dd><a href="">優勝目前、岩崎登場。栄光の架橋大合唱</a></dd>
-                    <dt><a href="">10/19</a></dt>
-                    <dd><a href="">csでサヨナラ。満塁男の偉業。</a></dd>
-                    <dt><a href="">11/5</a></dt>
-                    <dd><a href="">日本シリーズ最終戦での大きすぎる3ラン。(神)</a></dd>
-                    
-                </dl>
-            </div>
-            <div id="mietyan" class="area">
-                <dl>
-                    <dt><a href="">9/14</a></dt>
-                    <dd><a href="">成績にちなんだ暴れ方をしよう</a></dd>
-                    <dt><a href="">9/21</a></dt>
-                    <dd><a href="">雨の神宮球場をスライディング</a></dd>
-                </dl>
+        <section id="standings" class="js-fade">
+            <h2 class="section-title">2026年 セ・リーグ順位表</h2>
+            <p class="standings-date"></p>
+            <div class="standings-wrap">
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th>順位</th>
+                            <th>チーム</th>
+                            <th>試合</th>
+                            <th>勝利</th>
+                            <th>敗戦</th>
+                            <th>引分</th>
+                            <th>勝率</th>
+                            <th>勝差</th>
+                        </tr>
+                    </thead>
+                    <!-- 中身はjs/standings.jsで作る -->
+                    <tbody></tbody>
+                </table>
             </div>
         </section>
     </main>
     <aside class="js-fade">
         <section class="season">
-             <h2 class="section-title">2024年現地予約はこちらから</h2>
+             <h2 class="section-title">2026年現地予約はこちらから</h2>
              <ul>
                 <li><a href="https://hanshintigers.jp/ticket/list.html#regular_koshien" target="_blank"  rel="noopener noreferrer">阪神甲子園球場</a></li>
                 <li><a href="https://hanshintigers.jp/ticket/list.html#regular_kyocera" target="_blank"  rel="noopener noreferrer">京セラドーム大阪</a></li>
-                <li><a href="">倉敷マスカット球場</a></li>
+                <li><a href="https://hanshintigers.jp/ticket/regular/kurashiki/" target="_blank"  rel="noopener noreferrer">倉敷マスカット球場</a></li>
              </ul>
         </section>
 
@@ -200,6 +182,7 @@
     <script src="js/loading.js"></script>
     <script src="js/tab.js"></script>
     <script src="js/fadein.js"></script>
+    <script src="js/standings.js"></script>
     <!-- inviewのためのjs -->
 <script type="text/javascript" src="js/jquery.inview.js"></script>
 </body>

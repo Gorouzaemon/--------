@@ -1,0 +1,50 @@
+/*セ・リーグ順位表*/
+main #standings{
+    margin-bottom: 50px;
+}
+main #standings .standings-date{
+    text-align: right;
+    font-size: 0.9rem;
+    padding: 10px 0;
+}
+/*スマホで表がはみ出したら横にスクロールできるようにする*/
+main #standings .standings-wrap{
+    overflow-x: auto;
+}
+main #standings .standings-table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    white-space: nowrap;
+}
+main #standings .standings-table th{
+    background-color: var(--black);
+    color: var(--yellow);
+    padding: 10px 8px;
+    font-family: 'Noto Serif JP', serif;
+}
+main #standings .standings-table td{
+    padding: 12px 8px;
+    border-bottom: 1px solid #ccc;
+}
+/*チーム名は左寄せ*/
+main #standings .standings-table td:nth-child(2){
+    text-align: left;
+    font-weight: bold;
+}
+/*阪神の行を黄色にする*/
+main #standings .standings-table .tigers td{
+    background-color: var(--yellow);
+    font-weight: bold;
+}
+
+@media (max-width:834px) {
+    main #standings .section-title{
+        font-size: 1rem;
+    }
+    main #standings .standings-table th,
+    main #standings .standings-table td{
+        padding: 8px 2px;
+        font-size: 0.8rem;
+    }
+}
