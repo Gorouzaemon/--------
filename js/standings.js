@@ -1,9 +1,10 @@
 // セ・リーグ順位表
 // 更新するときは、下の日付と各チームの勝利・敗戦・引分の数字だけ書き換える。
 // 試合数・勝率・勝差・順位は自動で計算される。（並び順も自動）
+// マジックが点灯しているチームには「magic: 4」のように書くと、勝差のところが「M4」になる。（消えたら magic ごと消す）
 var standingsDate = '2026年9月25日時点';
 var standingsTeams = [
-    { name: '阪神', win: 75, lose: 59, draw: 1 },
+    { name: '阪神', win: 75, lose: 59, draw: 1, magic: 4 },
     { name: '巨人', win: 74, lose: 62, draw: 2 },
     { name: 'DeNA', win: 69, lose: 66, draw: 3 },
     { name: 'ヤクルト', win: 58, lose: 76, draw: 2 },
@@ -35,9 +36,9 @@ $(function () {
         var played = team.win + team.lose;
         var rate = played === 0 ? 0 : Math.round(team.win * 1000 / played);
         var rateText = rate === 1000 ? '1.000' : '.' + ('00' + rate).slice(-3);
-        //勝差は首位とのゲーム差
+        //勝差は首位とのゲーム差（マジックが点灯していれば「M4」のように出す）
         var gap = ((top.win - team.win) + (team.lose - top.lose)) / 2;
-        var gapText = i === 0 ? '-' : gap.toFixed(1);
+        var gapText = team.magic ? 'M' + team.magic : i === 0 ? '-' : gap.toFixed(1);
 
         rows += '<tr' + (team.name === '阪神' ? ' class="tigers"' : '') + '>'
             + '<td>' + rank + '</td>'
