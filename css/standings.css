@@ -1,6 +1,13 @@
 /*セ・リーグ順位表*/
 main #standings{
     margin-bottom: 50px;
+    position: relative;
+}
+/*1位の行に重ねる花火（js/fireworks.js）。クリックの邪魔をしないようにする*/
+main #standings .fireworks{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
 }
 main #standings .standings-date{
     text-align: right;
@@ -36,6 +43,33 @@ main #standings .standings-table td:nth-child(2){
 main #standings .standings-table .tigers td{
     background-color: var(--yellow);
     font-weight: bold;
+}
+/*1位の阪神の行を金ぴかにする（js/fireworks.jsでgoldをつける）。金色の上を光の帯が3回流れる*/
+main #standings .standings-table .tigers.gold{
+    background:
+        linear-gradient(110deg, transparent 40%, rgba(255, 255, 255, 0.8) 50%, transparent 60%) no-repeat,
+        linear-gradient(180deg, #fff3b0 0%, #ffd700 45%, #d4a017 100%);
+    background-size: 250% 100%, 100% 100%;
+    background-position: -50% 0, 0 0;
+    animation: goldShine 1s ease-in-out 3;
+}
+main #standings .standings-table .tigers.gold td{
+    background: transparent;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+/*光の帯が左から右へ流れる*/
+@keyframes goldShine{
+    from{
+        background-position: 150% 0, 0 0;
+    }
+    to{
+        background-position: -50% 0, 0 0;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    main #standings .standings-table .tigers.gold{
+        animation: none;
+    }
 }
 
 @media (max-width:834px) {
