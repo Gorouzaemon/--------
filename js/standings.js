@@ -2,14 +2,15 @@
 // 更新するときは、下の日付と各チームの勝利・敗戦・引分の数字だけ書き換える。
 // 試合数・勝率・勝差・順位は自動で計算される。（並び順も自動）
 // マジックが点灯しているチームには「magic: 4」のように書くと、勝差のところが「M4」になる。（消えたら magic ごと消す）
-var standingsDate = '2026年9月25日時点';
+// 優勝が決まったチームには「champion: true」と書くと、勝差のところが「優勝」になる。
+var standingsDate = '2026年10月3日時点';
 var standingsTeams = [
-    { name: '阪神', win: 75, lose: 59, draw: 1, magic: 4 },
-    { name: '巨人', win: 74, lose: 62, draw: 2 },
-    { name: 'DeNA', win: 69, lose: 66, draw: 3 },
-    { name: 'ヤクルト', win: 58, lose: 76, draw: 2 },
-    { name: '中日', win: 59, lose: 79, draw: 2 },
-    { name: '広島', win: 56, lose: 75, draw: 4 }
+    { name: '阪神', win: 77, lose: 60, draw: 2, champion: true },
+    { name: '巨人', win: 76, lose: 64, draw: 3 },
+    { name: 'DeNA', win: 70, lose: 69, draw: 3 },
+    { name: 'ヤクルト', win: 60, lose: 79, draw: 2 },
+    { name: '中日', win: 60, lose: 81, draw: 2 },
+    { name: '広島', win: 60, lose: 76, draw: 4 }
 ];
 
 $(function () {
@@ -36,9 +37,9 @@ $(function () {
         var played = team.win + team.lose;
         var rate = played === 0 ? 0 : Math.round(team.win * 1000 / played);
         var rateText = rate === 1000 ? '1.000' : '.' + ('00' + rate).slice(-3);
-        //勝差は首位とのゲーム差（マジックが点灯していれば「M4」のように出す）
+        //勝差は首位とのゲーム差（優勝が決まっていれば「優勝」、マジックが点灯していれば「M4」のように出す）
         var gap = ((top.win - team.win) + (team.lose - top.lose)) / 2;
-        var gapText = team.magic ? 'M' + team.magic : i === 0 ? '-' : gap.toFixed(1);
+        var gapText = team.champion ? '優勝' : team.magic ? 'M' + team.magic : i === 0 ? '-' : gap.toFixed(1);
 
         rows += '<tr' + (team.name === '阪神' ? ' class="tigers"' : '') + '>'
             + '<td>' + rank + '</td>'

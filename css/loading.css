@@ -21,6 +21,7 @@
     /* Loading アイコンの大きさ設定　*/
     #splash_logo img {
       width:520px;
+      max-width: 80vw; /*スマホでは画面幅の80%まで*/
     }
     
     /* fadeUpをするアイコンの動き */
